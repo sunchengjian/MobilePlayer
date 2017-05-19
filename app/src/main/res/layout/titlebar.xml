@@ -42,8 +42,6 @@
             android:layout_height="6dp"
             android:layout_alignRight="@id/tv_game"
             android:background="@drawable/shape_point" />
-
-
     </RelativeLayout>
 
     <ImageView
