@@ -11,22 +11,23 @@ import android.widget.VideoView;
 import com.sunchengjian.mobileplayer.R;
 
 public class SystemVideoPlayerActivity extends AppCompatActivity {
-private VideoView vv;
+    private VideoView vv;
     private Uri uri;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_system_video_player);
-       vv = (VideoView)findViewById(R.id.vv);
-        uri=getIntent().getData();
-        
+        vv = (VideoView) findViewById(R.id.vv);
+        uri = getIntent().getData();
+
         vv.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mp) {
                 vv.start();
             }
         });
-        
+
         vv.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {

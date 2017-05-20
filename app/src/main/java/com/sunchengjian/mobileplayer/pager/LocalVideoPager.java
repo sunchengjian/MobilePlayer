@@ -49,8 +49,6 @@ public class LocalVideoPager extends BaseFragment {
                 Intent intent = new Intent(context,SystemVideoPlayerActivity.class);
                 startActivity(intent);
 
-
-
             }
         });
         return view;
@@ -62,8 +60,6 @@ public class LocalVideoPager extends BaseFragment {
         Log.e("TAG", "LocalVideoPager-initData");
         //加载本地所有的视频
         getData();
-
-
     }
 
     private Handler handler=new Handler(){
